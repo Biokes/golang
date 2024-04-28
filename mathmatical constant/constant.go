@@ -18,7 +18,7 @@ func getConstant(number int) float64 {
 	total := 0.0
 	var input float64 = float64(number)
 	for value <= input {
-		total += 1 / factorial(value)
+		total += 1.0 / factorial(value)
 		fmt.Println(total)
 		value++
 	}
