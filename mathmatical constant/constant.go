@@ -24,7 +24,7 @@ func getConstant(number int) float64 {
 }
 func factorial(number int) int {
 	value := 1
-	for number != 0 {
+	for number != 1 {
 		value *= number
 		number--
 	}
