@@ -27,7 +27,7 @@ func factorial(number float64) float64 {
 	var value float64 = 1
 	for number != 1 {
 		value *= number
-		number--
+		number -= 1.0
 	}
 	return number
 }
