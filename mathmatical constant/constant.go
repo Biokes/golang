@@ -14,20 +14,16 @@ func collectInput() float64 {
 	return getConstant(number)
 }
 func getConstant(number int) float64 {
-	value := 1.0
-	counter := 0
 	total := 0.0
-	for counter <= number {
-		total += 1.0 / factorial(value)
-		counter++
+	for count := 1; count < int(number); count++ {
+		total += 1.0 / factorial(float64(count))
 	}
 	return total
 }
 func factorial(number float64) float64 {
-	var value int = 1
-	for number != 1 {
+	var value = 1.0
+	for count := 1; count < int(number); count++ {
 		value *= number
-		number -= 1.0
 	}
-	return number
+	return value
 }
