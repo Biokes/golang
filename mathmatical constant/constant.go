@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	collectInput()
+	fmt.Println(collectInput())
 }
 func collectInput() float64 {
 	number := 0
@@ -14,16 +14,18 @@ func collectInput() float64 {
 	return getConstant(number)
 }
 func getConstant(number int) float64 {
-	value := 1
+	value := 1.0
 	total := 0.0
-	for value <= number {
-		total += float64(1 / factorial(value))
+	var input float64 = float64(number)
+	for value <= input {
+		total += 1 / factorial(value)
+		fmt.Println(total)
 		value++
 	}
 	return total
 }
-func factorial(number int) int {
-	value := 1
+func factorial(number float64) float64 {
+	var value float64 = 1
 	for number != 1 {
 		value *= number
 		number--
