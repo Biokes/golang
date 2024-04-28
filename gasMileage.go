@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-type Number int
-
 func getGallonsUsed() int {
 	var gallons int
 	fmt.Println("Enter number of gallons used: ")
