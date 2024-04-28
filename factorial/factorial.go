@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	value := 0
-	for value < 0 {
+	for value <= 0 {
 		fmt.Print("Enter your number(greater than 0) to get the factorial: ")
 		_, _ = fmt.Scanln(&value)
 	}
