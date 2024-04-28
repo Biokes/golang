@@ -17,7 +17,7 @@ func getConstant(number int) float64 {
 	value := 1
 	total := 0.0
 	for value <= number {
-		total += float64(value / factorial(value))
+		total += float64(1 / factorial(value))
 		value++
 	}
 	return total
