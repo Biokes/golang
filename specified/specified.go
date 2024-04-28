@@ -10,14 +10,14 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
+	var numb int
 	for value < number {
-		var numb int
 		fmt.Println("Enter a number: ")
-		number, err = fmt.Scanln(&numb)
+		_, err = fmt.Scanln(&numb)
 		if err != nil {
 			fmt.Println(err)
 		}
 		value += numb
 	}
-	fmt.Printf("output : %d", number)
+	fmt.Printf("output : %d", numb)
 }
