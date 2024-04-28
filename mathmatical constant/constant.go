@@ -6,10 +6,8 @@ func main() {
 	collectInput()
 }
 func collectInput() float64 {
-	var number int
-	fmt.Println("Enter a number to get its maths value: ")
-	number, _ = fmt.Scanln(&number)
-	for number <= 1 {
+	number := 0
+	for number < 1 {
 		fmt.Println("Enter a number to get its maths value!!: ")
 		number, _ = fmt.Scanln(&number)
 	}
