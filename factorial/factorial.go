@@ -1,0 +1,5 @@
+package factorial
+
+func main() {
+
+}
