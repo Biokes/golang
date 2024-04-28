@@ -7,8 +7,8 @@ func main() {
 	population := 7951000000
 	populationIncrease := population
 	for i := 1; i <= 75; i++ {
-		fmt.Printf("%s %-3s   %s", "Year", "increase", "current increase")
-		fmt.Printf("\n%d %3d %17d\n", year, population-populationIncrease, population)
+		fmt.Printf("%s %s   %3s", "Year", "increase", "current increase")
+		fmt.Printf("\n%d %d %17d\n", year, population-populationIncrease, population)
 		populationIncrease = population
 		year += 1
 		population += calculatePopulation(population)
