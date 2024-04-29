@@ -7,7 +7,8 @@ func collectInput() string {
 	fmt.Print("Enter a five digit number: ")
 	_, _ = fmt.Scanln(&input)
 	for len(input) != 5 {
-		collectInput()
+		fmt.Print("Enter a five digit number: ")
+		_, _ = fmt.Scanln(&input)
 	}
 	return input
 }
@@ -18,5 +19,5 @@ func isPalindrome(value string) bool {
 }
 func main() {
 	input := collectInput()
-	fmt.Println(isPalindrome(input))
+	fmt.Printf(input+"%s is a palindrome: ", isPalindrome(input))
 }
