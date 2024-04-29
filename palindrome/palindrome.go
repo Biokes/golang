@@ -19,5 +19,5 @@ func isPalindrome(value string) bool {
 }
 func main() {
 	input := collectInput()
-	fmt.Printf(input+"%s is a palindrome: ", isPalindrome(input))
+	fmt.Println(isPalindrome(input))
 }
