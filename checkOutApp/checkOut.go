@@ -37,7 +37,7 @@ func getPrice() float32 {
 	return item
 }
 func getName() string {
-	fmt.Sprintln("Enter customer's name: ")
+	fmt.Println("Enter customer's name: ")
 	var name string
 	_, _ = fmt.Scanln(&name)
 	return name
