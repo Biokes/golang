@@ -61,7 +61,7 @@ func getNameAndDiscount(customerName string) (string, float32) {
 	var discount float32
 	fmt.Println("Enter your name: ")
 	_, _ = fmt.Scanln(&name)
-	fmt.Println(`How much discount will ` + customerName + `get: `)
+	fmt.Println(`How much discount will ` + customerName + ` get: `)
 	_, _ = fmt.Scanln(&discount)
 	return name, discount
 }
@@ -148,4 +148,5 @@ func checkOut() {
 }
 func main() {
 	checkOut()
+
 }
